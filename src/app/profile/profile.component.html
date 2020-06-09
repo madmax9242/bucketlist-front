@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="card">
+		<div class="card-body">
+			<!-- INFORMATION -->
+			<div class="text-left">
+				<div *ngFor="let user of user">
+					<p>Email: {{user?.email}}</p>
+					<p>Password: {{user?.password}}</p>
+					<p>First Name: {{user?.firstName}}</p>
+					<p>Last Name: {{user?.lastName}}</p>
+					<p>Contact: {{user?.contact}}</p>
+
+					<br>
+
+					<!-- Note: to print response as JSON, use the built in json pipe -->
+					<p>User: {{user | json}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
