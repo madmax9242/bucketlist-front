@@ -1504,7 +1504,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var email = document.getElementById("inputEmail").value;
           var password = document.getElementById("inputPassword").value;
-          var user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, this.encryptionService.encrypt(email), password, undefined, undefined, undefined); // Sanity check
+          var user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, email, this.encryptionService.encrypt(password), undefined, undefined, undefined); // Sanity check
 
           console.log("SENDING USER TO BACKEND: ");
           console.log(user); // Validates and routes accordingly
@@ -2261,7 +2261,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var firstName = document.getElementById("inputFirstName").value;
           var lastName = document.getElementById("inputLastName").value;
           var contact = document.getElementById("inputContact").value;
-          var user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, this.encryptionService.encrypt(email), password, firstName, lastName, contact); // Sanity check
+          var user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, email, this.encryptionService.encrypt(password), firstName, lastName, contact); // Sanity check
 
           console.log("SENDING USER TO BACKEND: ");
           console.log(user); // Validates and routes accordingly

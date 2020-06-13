@@ -760,7 +760,7 @@ class LoginComponent {
         // Constructs a user object based on input values
         let email = document.getElementById("inputEmail").value;
         let password = document.getElementById("inputPassword").value;
-        let user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, this.encryptionService.encrypt(email), password, undefined, undefined, undefined);
+        let user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, email, this.encryptionService.encrypt(password), undefined, undefined, undefined);
         // Sanity check
         console.log("SENDING USER TO BACKEND: ");
         console.log(user);
@@ -1137,7 +1137,7 @@ class RegisterComponent {
         let firstName = document.getElementById("inputFirstName").value;
         let lastName = document.getElementById("inputLastName").value;
         let contact = document.getElementById("inputContact").value;
-        let user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, this.encryptionService.encrypt(email), password, firstName, lastName, contact);
+        let user = new _class_user_user__WEBPACK_IMPORTED_MODULE_1__["User"](undefined, email, this.encryptionService.encrypt(password), firstName, lastName, contact);
         // Sanity check
         console.log("SENDING USER TO BACKEND: ");
         console.log(user);
